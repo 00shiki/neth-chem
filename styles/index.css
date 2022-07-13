@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .hero {
+    font-family: "Bad Script", cursive;
+  }
+}
