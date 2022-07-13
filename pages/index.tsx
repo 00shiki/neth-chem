@@ -16,14 +16,14 @@ const IndexPage = () => (
             Pelestarian Kebudayaan Indonesia dalam <br />
             Pembelajaran Kimia
           </p>
-          <button className="text-xl text-white bg-yellow-500 w-[200px] py-3 rounded-full hover:bg-yellow-300 hover:text-black shadow-2xl flex flex-row justify-center items-center space-x-5">
+          <button className="text-xl text-black bg-yellow-400 w-[200px] py-3 rounded-full hover:bg-yellow-200 shadow-2xl flex flex-row justify-center items-center space-x-5 ease-in-out duration-300">
             <Link href="/">
               <a>Learn More</a>
             </Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width={24}
+              height={24}
               fill="currentColor"
               className="bi bi-arrow-right"
               viewBox="0 0 16 16"

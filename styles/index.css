@@ -6,4 +6,8 @@
   .hero {
     font-family: "Bad Script", cursive;
   }
+
+  body {
+    font-family: "Nunito Sans", sans-serif;
+  }
 }
