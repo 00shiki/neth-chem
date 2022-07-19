@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const IndexPage = () => (
   <Layout title="Home | Neth Chem">
-    <div className="bg-cyan-600 h-[900px]">
-      <div className="container mx-auto py-8 flex space-x-5">
+    <div className="h-screen">
+      <div className="container mx-auto py-8 flex space-x-5 h-full">
         {/* Hero Section */}
-        <div className="w-[1200px]">
-          <h1 className="hero text-7xl text-amber-100 italic mt-10 mb-10 leading-normal">
+        <div className="w-7/12 flex flex-col justify-center">
+          <h1 className="hero text-8xl text-amber-100 italic mt-10 mb-10 leading-normal">
             Welcome to National <br /> Etnochemistry
           </h1>
-          <p className="text-lg mb-5">
+          <p className="text-2xl mb-10">
             Web Learning Terintegrasi Etnokimia untuk <br />
             Pelestarian Kebudayaan Indonesia dalam <br />
             Pembelajaran Kimia
@@ -25,7 +25,7 @@ const IndexPage = () => (
               width={24}
               height={24}
               fill="currentColor"
-              className="bi bi-arrow-right"
+              className="bi bi-arrow-right hover:animate-arrow-slide-out"
               viewBox="0 0 16 16"
             >
               <path
@@ -36,7 +36,7 @@ const IndexPage = () => (
           </button>
         </div>
         {/* Hero Image */}
-        <div className="flex flex-col items-end justify-center w-full">
+        <div className="flex flex-col items-end justify-center w-12/12">
           <Image
             src="/images/flask.png"
             alt="Neth Chem Logo"
