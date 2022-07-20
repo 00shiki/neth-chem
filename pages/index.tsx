@@ -5,7 +5,7 @@ import router from "next/router";
 
 const IndexPage = () => (
   <Layout title="Home | Neth Chem">
-    <div className="h-screen bg-[url('../public/images/hero-homepage.png')]">
+    <div className="h-screen bg-right-top bg-no-repeat bg-[url('../public/images/hero-homepage.png')] bg-[length:1680px_1050px]">
       <div className="container mx-auto py-8 flex h-full">
         {/* Hero Section */}
         <div className="w-full flex flex-col justify-center">
