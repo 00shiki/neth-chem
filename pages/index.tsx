@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import Image from "next/image";
+import router from "next/router";
 
 const IndexPage = () => (
   <Layout title="Home | Neth Chem">
-    <div className="h-screen">
-      <div className="container mx-auto py-8 flex space-x-5 h-full">
+    <div className="h-screen bg-[url('../public/images/hero-homepage.png')]">
+      <div className="container mx-auto py-8 flex h-full">
         {/* Hero Section */}
-        <div className="w-7/12 flex flex-col justify-center">
+        <div className="w-full flex flex-col justify-center">
           <h1 className="hero text-8xl text-amber-100 italic mt-10 mb-10 leading-normal">
             Welcome to National <br /> Etnochemistry
           </h1>
@@ -16,10 +17,12 @@ const IndexPage = () => (
             Pelestarian Kebudayaan Indonesia dalam <br />
             Pembelajaran Kimia
           </p>
-          <button className="text-xl text-black bg-yellow-400 w-[200px] py-3 rounded-full hover:bg-yellow-200 shadow-2xl flex flex-row justify-center items-center space-x-5 ease-in-out duration-300">
-            <Link href="/">
-              <a>Learn More</a>
-            </Link>
+          <button
+            className="text-xl text-black bg-yellow-400 w-[200px] py-3 rounded-full hover:bg-yellow-200 shadow-2xl flex flex-row justify-center items-center space-x-5 ease-in-out duration-300"
+            type="button"
+            onClick={() => router.push("/learn")}
+          >
+            <a>Learn More</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={24}
@@ -34,16 +37,6 @@ const IndexPage = () => (
               />
             </svg>
           </button>
-        </div>
-        {/* Hero Image */}
-        <div className="flex flex-col items-end justify-center w-12/12">
-          <Image
-            src="/images/flask.png"
-            alt="Neth Chem Logo"
-            className="w-auto h-auto shadow-2xl"
-            width={500}
-            height={500}
-          />
         </div>
       </div>
     </div>
