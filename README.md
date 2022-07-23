@@ -16,5 +16,17 @@ yarn dev
 
 ## Stack Used
 
-* frontend : Next js
+* Frontend : Next js
 * Styling : Tailwind CSS
+
+## Work in Progress
+- [X] Homepage
+- [X] Navbar
+- [ ] Learn Menu (50%)
+- [ ] Materi
+    - [ ] Asam Basa
+    - [ ] Koloid
+    - [ ] Hidrokarbon
+- [ ] Video
+- [ ] Kuis
+- [ ] Styling for finishing touch

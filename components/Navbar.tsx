@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { NavItem } from "./NavItem";
 
 export const Navbar = () => {
   return (
@@ -21,21 +22,9 @@ export const Navbar = () => {
         </Link>
         <div className="w-6/12">
           <div className="text-2xl lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center items-start  flex flex-col lg:h-auto">
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:text-amber-400 hover:underline underline-offset-8">
-                Home
-              </a>
-            </Link>
-            <Link href="/learn">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:text-amber-400 hover:underline underline-offset-8">
-                Learn
-              </a>
-            </Link>
-            <Link href="/about">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:text-amber-400 hover:underline underline-offset-8">
-                About
-              </a>
-            </Link>
+            <NavItem Item="Home" Routes="/" />
+            <NavItem Item="Learn" Routes="/learn" />
+            <NavItem Item="About" Routes="/about" />
           </div>
         </div>
         <div className="w-1/12 text-center">
